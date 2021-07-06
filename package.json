@@ -8,6 +8,7 @@
   "homepage": "https://github.com/bengo4/textlint-rule-preset-bengo4#readme",
 
   "scripts": {
+    "example": "npm run build && cd example && npm it",
     "test": "textlint-scripts test",
     "build": "textlint-scripts build",
     "prepublish": "npm run --if-present build",
