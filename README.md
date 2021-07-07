@@ -73,6 +73,7 @@ npm install textlint-rule-preset-bengo4
 
 ```sh
 npm ci
+npx husky install
 ```
 
 ### Commit message
