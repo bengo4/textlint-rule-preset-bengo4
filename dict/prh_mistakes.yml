@@ -1,0 +1,38 @@
+meta:
+  - title: 誤字・誤用
+  - memo: よくある誤字・誤用を追記する
+rules:
+  - expected: コミュニケーション
+    patterns: コミニュケーション
+  - expected: シミュレーション
+    patterns: シュミレーション
+  - expected: ご使用
+    patterns: ご仕様
+  - expected: うろ覚え
+    patterns: うる覚え
+  - expected: そういう
+    patterns: そうゆう
+  - expected: どういう
+    patterns: どうゆう
+  - expected: しづらい
+    patterns: しずらい
+  - expected: いずれ
+    patterns: いづれ
+  - expected: 少しずつ
+    patterns: 少しづつ
+  - expected: 後を立たない
+    patterns: 後を絶たない
+  - expected: 念頭に置く
+    patterns: 念頭に入れる
+  - expected: 似て非なる
+    patterns: 似て異なる
+  - expected: $1に応える
+    patterns: /(ニーズ|需要)に答える/
+  - expected: $1を傾ける
+    patterns: /(うんちく|薀蓄)を垂れる/
+  - expected: 並べ替え
+    patterns: 並び替え
+  - expected: ありがとう
+    patterns: 有難う
+  - expected: ございま$1
+    patterns: /御座いま(す|した|せん)/

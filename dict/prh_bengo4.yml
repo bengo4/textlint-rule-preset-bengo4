@@ -1,0 +1,62 @@
+meta:
+  - title: 弁護士ドットコム固有の名称・表記ルール
+  - memo: 汎用的ではない、弁護士ドットコム固有のルールを追加する
+rules:
+  # サービス名
+  - expected: 弁護士ドットコム
+    patterns: 弁コム
+    prh: サービス名の場合は略さず表記します
+  - expected: 弁護士ドットコムLIBRARY
+    patterns: /弁護士ドットコム(Library|library)/
+    prh: サービス名（英語表記）
+  - expected: 弁護士ドットコムライブラリー
+    patterns: /弁護士ドットコムライブラリ([^ー])/
+    prh: カタカナ表記時は長音（ー）あり
+  - expected: 弁護士ドットコムライブラリー
+    patterns: /弁護士ドットコムライブラリ([^ー])/
+    prh: カタカナ表記時は長音（ー）あり
+  - expected: 税理士ドットコム
+    patterns: 税コム
+    prh: サービス名の場合は略さず表記します
+  - expected: BUSINESS LAWYERS
+    patterns: /(Business Lawyers|Business lawyers|business lawyers)/
+    prh: サービス名（英語表記）
+  - expected: BUSINESS LAWYERS
+    patterns: /BL(で|に|を|は|が|の)/
+    prh: サービス名の場合は略さず表記します
+  - expected: CloudSign
+    patterns: /(CLOUDSIGN|cloudsign)/
+    prh: サービス名（英語表記）
+
+  # 機能
+  - expected: 一括見積り
+    patterns: 一括見積もり
+    prh: 機能名
+  - expected: 感謝の声をおくる
+    patterns: /感謝の声を(送る|寄せる|投稿する)/
+    prh: 機能名
+  - expected: みんなの法律相談
+    patterns:
+      - みん法
+      - 皆の法律相談
+    prh: 機能名
+
+  # 用語
+  - expected: スマートフォン
+    patterns: /(スマートホン|スマホ|スマフォ)
+  - expected: ユーザー$1
+    pattern: /ユーザ([^ー])/
+  - expected: サーバー$1
+    pattern: /サーバ([^ー])/
+  - expected: ブラウザ
+    pattern: ブラウザー
+  - expected: セキュリティ
+    pattern: セキュリティー
+  - expected: ウェブサイト
+    pattern: /(web|Web|WEB)サイト/
+  - expected: カテゴリ
+    patterns: カテゴリー
+  - expected: 二割司法
+    patterns: 2割司法
+  - expected: コミュニティ
+    patterns: コミュニティー

@@ -1,0 +1,14 @@
+{
+  "name": "example",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "textlint ./sample.md"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {
+    "textlint": "^12.0.0",
+    "textlint-rule-preset-bengo4": "file:.."
+  }
+}

@@ -1,0 +1,171 @@
+meta:
+  - title: 表記のルール
+  - memo: 汎用的な表記のルールを追加する
+rules:
+  # あ行
+  - expected: あえて
+    patterns: 敢えて
+  - expected: あらかじめ
+    patterns: 予め
+  - expected: あるいは
+    patterns: 或いは
+  - expected: あわせて
+    patterns: 併せて
+  - expected: いか
+    patterns: 如何
+  - expected: いずれ
+    patterns: 何れ
+  - expected: いたします
+    patterns: 致します
+  - expected: いただく
+    patterns: 頂く
+  - expected: 今さら
+    patterns: 今更
+  - expected: いろいろ
+    patterns: 色々
+  - expected: いわゆる
+    patterns: 所謂
+  - expected: 受付開始
+    patterns: /(受付け|受け付け)開始/
+  - expected: 受付時間
+    patterns: /(受付け|受け付け)時間/
+  - expected: 受付設定
+    patterns: /(受付け|受け付け)設定/
+  - expected: 受け付ける
+    patterns: 受付ける
+  - expected: 受け取り
+    patterns:
+      - 受取
+      - 受取り
+  - expected: お手数をおかけしますが
+    patterns: お手数をお掛けしますが
+  - expected: お問い合せ
+    patterns:
+      - お問い合せ
+      - お問合せ
+  - expected: およそ
+    patterns: 凡そ
+  - expected: おもむろに
+    patterns: 徐に
+  - expected: および
+    patterns: 及び
+  - expected: 終わる
+    patterns: 終る
+  # か行
+  - expected: かえって
+    patterns: 却って
+  - expected: かつ
+    patterns: 且つ
+  - expected: かもしれない
+    patterns: かも知れない
+  - expected: 切り替え
+    patterns:
+      - 切替
+      - 切替え
+      - 切換
+      - 切り換え
+  - expected: ください
+    patterns: 下さい
+  - expected: くらい
+    patterns: /(人|件|冊)位/
+  - expected: ご$1
+    patterns: /御(意見|確認|解約|参照|相談|注意|注文|登録|入力|予約|覧|了承|利用|連絡)/
+  - expected: ご存じ
+    patterns: ご存知
+  - expected: これほど
+    patterns: これ程
+  # さ行
+  - expected: さきほど
+    patterns: 先程
+  - expected: さまざま
+    patterns: 様々
+  - expected: さらに
+    patterns: /^更に/
+  - expected: しかし
+    patterns: 然し
+  - expected: しばらく
+    patterns: 暫く
+  - expected: すでに
+    patterns: 既に
+  - expected: すなわち
+    patterns: 即ち
+  - expected: すべて
+    patterns: 全て
+  - expected: せっかく
+    patterns: 折角
+  - expected: ぜひ
+    patterns: 是非
+  # た行
+  - expected: たびたび
+    patterns: 度々
+  - expected: $1たび
+    patterns: /(する|させる|される)度/
+  - expected: できる
+    patterns: 出来る
+  - expected: たくさん
+    patterns: 沢山
+  - expected: ただ
+    patterns: 只
+  - expected: ただし
+    patterns: 但し
+  - expected: $1ため
+    patterns: /(の|が|ある|する|させる|させない|される|しまう|いかない|とる|ない|受ける|使う)為/
+  - expected: 取り扱い
+    patterns: 取扱い
+  # な行
+  - expected: $1ない
+    patterns: /(が|は|に|では|でも|関係|)無い/
+  - expected: なお$1
+    patterns: /尚(、|のこと)/
+  - expected: なおさら
+    patterns: 尚更
+  - expected: なかなか
+    patterns: 中々
+  - expected: など
+    patterns: 等
+  - expected: ならびに
+    patterns: 並びに
+  - expected: のとおり
+    patterns: の通り
+  - expected: のよう$1
+    patterns: /の様(に|な)/
+  # は行
+  - expected: はじめて
+    patterns: 初めて
+  - expected: ひな形
+    patterns: 雛形
+  # ま行
+  - expected: まず
+    patterns: 先ず
+  - expected: また
+    patterns: /又(、|は|の)/
+  - expected: まで
+    patterns: 迄
+  - expected: 見積$1
+    patterns: /見積も(り|る)/
+  - expected: 見積書
+    patterns: /(見積り書|見積もり書)/
+  - expected: むしろ
+    patterns: 寧ろ
+  - expected: めったに
+    patterns: 滅多に
+  - expected: もはや
+    patterns: 最早
+  - expected: 申し込み
+    patterns: 申込み
+  - expected: 申し訳ございません
+    patterns: 申し訳ありません
+  - expected: もはや
+    patterns: 最早
+  # や行
+  - expected: よほど
+    patterns: 余程
+  # わ行
+  - expected: 私たち
+    patterns: 私達
+  - expected: をもって
+    patterns:
+      - を以て
+      - を以って
+  - expected: をもとに
+    patterns: を基に
