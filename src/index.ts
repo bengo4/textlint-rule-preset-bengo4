@@ -38,6 +38,14 @@ module.exports = {
       "ja-hiragana-keishikimeishi": true,
       "ja-no-redundant-expression": true,
       "no-mix-dearu-desumasu": true,
+      // 一文で使える"、"の数
+      "max-ten": {
+        "max": 3
+      },
+      // 連続して同じ助詞が出たパターンを検出
+      "no-doubled-joshi": {
+        "min_interval": 1
+      },
       prh: true,
     },
     japanesePreset.rulesConfig,

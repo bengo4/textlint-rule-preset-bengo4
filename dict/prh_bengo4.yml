@@ -7,22 +7,25 @@ rules:
     patterns: 弁コム
     prh: サービス名の場合は略さず表記します
   - expected: 弁護士ドットコムLIBRARY
-    patterns: /弁護士ドットコム(Library|library)/
+    patterns: /弁護士ドットコム(\s?[Ll]ibrary)/
     prh: サービス名（英語表記）
   - expected: 弁護士ドットコムライブラリー
     patterns: /弁護士ドットコムライブラリ([^ー])/
     prh: カタカナ表記時は長音（ー）あり
-  - expected: 弁護士ドットコムライブラリー
-    patterns: /弁護士ドットコムライブラリ([^ー])/
-    prh: カタカナ表記時は長音（ー）あり
+  - expected: 業務支援システム
+    patterns: /業シス/
+    prh: サービス名の場合は略さず表記します
+  - expected: GYOSYS
+    patterns: gyosys
+    prh: サービス名（英語表記）
   - expected: 税理士ドットコム
     patterns: 税コム
     prh: サービス名の場合は略さず表記します
   - expected: BUSINESS LAWYERS
     patterns: /(Business Lawyers|Business lawyers|business lawyers)/
     prh: サービス名（英語表記）
-  - expected: BUSINESS LAWYERS
-    patterns: /BL(で|に|を|は|が|の)/
+  - expected: BUSINESS LAWYERS$1
+    patterns: /BL(で|に|を|は|が|の|と|も)/
     prh: サービス名の場合は略さず表記します
   - expected: CloudSign
     patterns: /(CLOUDSIGN|cloudsign)/
