@@ -7,13 +7,13 @@ rules:
     patterns: 弁コム
     prh: サービス名の場合は略さず表記します
   - expected: 弁護士ドットコムLIBRARY
-    patterns: /弁護士ドットコム(\s?[Ll]ibrary)/
+    patterns: /弁護士ドットコム\s?(L|l)ibrary/
     prh: サービス名（英語表記）
   - expected: 弁護士ドットコムライブラリー
     patterns: /弁護士ドットコムライブラリ([^ー])/
     prh: カタカナ表記時は長音（ー）あり
   - expected: 業務支援システム
-    patterns: /業シス/
+    patterns: 業シス
     prh: サービス名の場合は略さず表記します
   - expected: GYOSYS
     patterns: gyosys
