@@ -31,12 +31,10 @@ rules:
     patterns: /(受付け|受け付け)時間/
   - expected: 受付設定
     patterns: /(受付け|受け付け)設定/
-  - expected: 受け付け
-    patterns: 受付け
-  - expected: 受け取り
-    patterns:
-      - 受取
-      - 受取り
+  - expected: 受け付け$1
+    patterns: /受付け(る|ない|ず|て|ます|ません)/
+  - expected: 受け取$
+    patterns: /受取(る|り|らない|らず|って|った|ります|ました|ません|ませんでした)/
   - expected: お手数をおかけしますが
     patterns: お手数をお掛けしますが
   - expected: 問い合わせ
