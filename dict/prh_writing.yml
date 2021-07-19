@@ -31,18 +31,16 @@ rules:
     patterns: /(受付け|受け付け)時間/
   - expected: 受付設定
     patterns: /(受付け|受け付け)設定/
-  - expected: 受け付ける
-    patterns: 受付ける
-  - expected: 受け取り
-    patterns:
-      - 受取
-      - 受取り
+  - expected: 受け付け$1
+    patterns: /受付け(る|ない|ず|て|ます|ません)/
+  - expected: 受け取$
+    patterns: /受取(る|り|らない|らず|って|った|ります|ました|ません|ませんでした)/
   - expected: お手数をおかけしますが
     patterns: お手数をお掛けしますが
-  - expected: お問い合せ
+  - expected: 問い合わせ
     patterns:
-      - お問い合せ
-      - お問合せ
+      - 問合わせ
+      - 問合せ
   - expected: およそ
     patterns: 凡そ
   - expected: おもむろに
@@ -110,8 +108,9 @@ rules:
     patterns: 但し
   - expected: $1ため
     patterns: /(の|が|ある|する|させる|させない|される|しまう|いかない|とる|ない|受ける|使う)為/
-  - expected: 取り扱い
-    patterns: 取扱い
+  - expected: 取り扱$1
+    patterns: /取扱(い|う)/
+    prh: 動詞の場合は「取り扱(い|う)」の形で送り仮名を入れます。ただし名詞の場合は「取扱(い)」でも構いません。
   # な行
   - expected: $1ない
     patterns: /(が|は|に|では|でも|関係|)無い/
