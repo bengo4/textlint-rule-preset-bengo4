@@ -37,7 +37,7 @@ rules:
     patterns: /受取(る|り|らない|らず|って|った|ります|ました|ません|ませんでした)/
   - expected: お手数をおかけしますが
     patterns: お手数をお掛けしますが
-  - expected: 問い合わせ
+  - expected: お問い合わせ
     patterns:
       - 問合わせ
       - 問合せ
@@ -168,3 +168,10 @@ rules:
       - を以って
   - expected: をもとに
     patterns: を基に
+  # 句読点
+  - expected: $1
+    patterns: /(一方|なお|また)/、
+    prh: 誤読や難読の恐れのある場合を除き、読点を省略します
+  - expected: $1
+    patterns: 、/(「|『)/
+    prh: 誤読や難読の恐れのある場合を除き、読点を省略します
