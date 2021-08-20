@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/bengo4/textlint-rule-preset-bengo4/compare/v1.0.1...v1.0.2) (2021-08-20)
+
+
+### Bug Fixes
+
+* 用語を追加（よく使われるサービス名、句読点のルール） ([#6](https://github.com/bengo4/textlint-rule-preset-bengo4/issues/6)) ([23788b0](https://github.com/bengo4/textlint-rule-preset-bengo4/commit/23788b07a7347f5c2b4a8ccf6237ff19697d9d80))
+
 ## [1.0.1](https://github.com/bengo4/textlint-rule-preset-bengo4/compare/v1.0.0...v1.0.1) (2021-07-19)
 
 
