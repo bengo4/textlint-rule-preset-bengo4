@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/bengo4/textlint-rule-preset-bengo4/compare/v1.0.2...v1.0.3) (2021-08-20)
+
+
+### Bug Fixes
+
+* 正規表現の誤りを修正、specsプロパティを追加 ([#7](https://github.com/bengo4/textlint-rule-preset-bengo4/issues/7)) ([833ad29](https://github.com/bengo4/textlint-rule-preset-bengo4/commit/833ad2930ccbf6797312eef7d06ed2b9b779c344))
+
 ## [1.0.2](https://github.com/bengo4/textlint-rule-preset-bengo4/compare/v1.0.1...v1.0.2) (2021-08-20)
 
 
