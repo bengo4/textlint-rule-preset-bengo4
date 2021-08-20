@@ -170,8 +170,8 @@ rules:
     patterns: を基に
   # 句読点
   - expected: $1
-    patterns: /(一方|なお|また)/、
+    patterns: /(一方|なお|また)、/
     prh: 誤読や難読の恐れのある場合を除き、読点を省略します
   - expected: $1
-    patterns: 、/(「|『)/
+    patterns: /、(「|『)/
     prh: 誤読や難読の恐れのある場合を除き、読点を省略します
