@@ -63,3 +63,13 @@ rules:
     patterns: 2割司法
   - expected: コミュニティ
     patterns: コミュニティー
+  - expected: Google
+    patterns: /(GOOGLE|google)/
+  - expected: Amazon
+    patterns: /(AMAZON|amazon)/
+  - expected: Facebook
+    patterns: /(FACEBOOK|facebook)/
+  - expected: Apple
+    patterns: /(APPLE|apple)/
+  - expected: Yahoo
+    patterns: /(YAHOO|yahoo)/
