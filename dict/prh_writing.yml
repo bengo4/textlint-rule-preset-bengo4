@@ -27,14 +27,29 @@ rules:
     patterns: 所謂
   - expected: 受付開始
     patterns: /(受付け|受け付け)開始/
+    specs:
+      - from: 受付け開始
+        to: 受付開始
   - expected: 受付時間
     patterns: /(受付け|受け付け)時間/
+    specs:
+      - from: 受付け時間
+        to: 受付時間
   - expected: 受付設定
     patterns: /(受付け|受け付け)設定/
+    specs:
+      - from: 受付け設定
+        to: 受付設定
   - expected: 受け付け$1
     patterns: /受付け(る|ない|ず|て|ます|ません)/
-  - expected: 受け取$
+    specs:
+      - from: 受付ける
+        to: 受け付ける
+  - expected: 受け取$1
     patterns: /受取(る|り|らない|らず|って|った|ります|ました|ません|ませんでした)/
+    specs:
+      - from: 受取る
+        to: 受け取る
   - expected: お手数をおかけしますが
     patterns: お手数をお掛けしますが
   - expected: お問い合わせ
@@ -64,10 +79,16 @@ rules:
       - 切り換え
   - expected: ください
     patterns: 下さい
-  - expected: くらい
+  - expected: $1くらい
     patterns: /(人|件|冊)位/
+    specs:
+      - from: 人位
+        to: 人くらい
   - expected: ご$1
     patterns: /御(意見|確認|解約|参照|相談|注意|注文|登録|入力|予約|覧|了承|利用|連絡)/
+    specs:
+      - from: 御意見
+        to: ご意見
   - expected: ご存じ
     patterns: ご存知
   - expected: これほど
@@ -79,6 +100,9 @@ rules:
     patterns: 様々
   - expected: さらに
     patterns: /^更に/
+    specs:
+      - from: 更に
+        to: さらに
   - expected: しかし
     patterns: 然し
   - expected: しばらく
@@ -98,6 +122,9 @@ rules:
     patterns: 度々
   - expected: $1たび
     patterns: /(する|させる|される)度/
+    specs:
+      - from: する度
+        to: するたび
   - expected: できる
     patterns: 出来る
   - expected: たくさん
@@ -108,14 +135,26 @@ rules:
     patterns: 但し
   - expected: $1ため
     patterns: /(の|が|ある|する|させる|させない|される|しまう|いかない|とる|ない|受ける|使う)為/
+    specs:
+      - from: の為
+        to: のため
   - expected: 取り扱$1
     patterns: /取扱(い|う)/
+    specs:
+      - from: 取扱い
+        to: 取り扱い
     prh: 動詞の場合は「取り扱(い|う)」の形で送り仮名を入れます。ただし名詞の場合は「取扱(い)」でも構いません。
   # な行
   - expected: $1ない
     patterns: /(が|は|に|では|でも|関係|)無い/
+    specs:
+      - from: が無い
+        to: がない
   - expected: なお$1
     patterns: /尚(、|のこと)/
+    specs:
+      - from: 尚、
+        to: なお、
   - expected: なおさら
     patterns: 尚更
   - expected: なかなか
@@ -128,6 +167,9 @@ rules:
     patterns: の通り
   - expected: のよう$1
     patterns: /の様(に|な)/
+    specs:
+      - from: の様に
+        to: のように
   # は行
   - expected: はじめて
     patterns: 初めて
@@ -136,14 +178,23 @@ rules:
   # ま行
   - expected: まず
     patterns: 先ず
-  - expected: また
+  - expected: また$1
     patterns: /又(、|は|の)/
+    specs:
+      - from: 又は
+        to: または
   - expected: まで
     patterns: 迄
   - expected: 見積$1
     patterns: /見積も(り|る)/
+    specs:
+      - from: 見積もり
+        to: 見積り
   - expected: 見積書
     patterns: /(見積り書|見積もり書)/
+    specs:
+      - from: 見積り書
+        to: 見積書
   - expected: むしろ
     patterns: 寧ろ
   - expected: めったに
@@ -171,7 +222,13 @@ rules:
   # 句読点
   - expected: $1
     patterns: /(一方|なお|また)、/
+    specs:
+      - from: また、
+        to: また
     prh: 誤読や難読の恐れのある場合を除き、読点を省略します
   - expected: $1
     patterns: /、(「|『)/
+    specs:
+      - from: 、「
+        to: 「
     prh: 誤読や難読の恐れのある場合を除き、読点を省略します

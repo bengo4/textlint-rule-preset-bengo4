@@ -46,17 +46,29 @@ rules:
 
   # 用語
   - expected: スマートフォン
-    patterns: /(スマートホン|スマホ|スマフォ)
-  - expected: ユーザー$1
-    pattern: /ユーザ([^ー])/
-  - expected: サーバー$1
-    pattern: /サーバ([^ー])/
+    patterns:
+      - スマートホン
+      - スマホ
+      - スマフォ
+  - expected: ユーザー
+    pattern: /ユーザ(?!ー|ビリティ|セグメント)/
+    specs:
+      - from: ユーザ
+        to: ユーザー
+  - expected: サーバー
+    pattern: /サーバ(?!ー)/
+    specs:
+      - from: サーバ
+        to: サーバー
   - expected: ブラウザ
     pattern: ブラウザー
   - expected: セキュリティ
     pattern: セキュリティー
   - expected: ウェブサイト
     pattern: /(web|Web|WEB)サイト/
+    specs:
+      - from: webサイト
+        to: ウェブサイト
   - expected: カテゴリ
     patterns: カテゴリー
   - expected: 二割司法
@@ -65,11 +77,26 @@ rules:
     patterns: コミュニティー
   - expected: Google
     patterns: /(GOOGLE|google)/
+    specs:
+      - from: GOOGLE
+        to: Google
   - expected: Amazon
     patterns: /(AMAZON|amazon)/
+    specs:
+      - from: AMAZON
+        to: Amazon
   - expected: Facebook
     patterns: /(FACEBOOK|facebook)/
+    specs:
+      - from: FACEBOOK
+        to: Facebook
   - expected: Apple
     patterns: /(APPLE|apple)/
+    specs:
+      - from: APPLE
+        to: Apple
   - expected: Yahoo
     patterns: /(YAHOO|yahoo)/
+    specs:
+      - from: YAHOO
+        to: Yahoo

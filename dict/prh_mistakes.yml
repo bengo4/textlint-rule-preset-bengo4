@@ -28,11 +28,20 @@ rules:
     patterns: 似て異なる
   - expected: $1に応える
     patterns: /(ニーズ|需要)に答える/
+    specs:
+      - from: ニーズに答える
+        to: ニーズに応える
   - expected: $1を傾ける
     patterns: /(うんちく|薀蓄)を垂れる/
+    specs:
+      - from: うんちくを垂れる
+        to: うんちくを傾ける
   - expected: 並べ替え
     patterns: 並び替え
   - expected: ありがとう
     patterns: 有難う
   - expected: ございま$1
     patterns: /御座いま(す|した|せん)/
+    specs:
+      - from: 御座います
+        to: ございます
