@@ -30,7 +30,92 @@ rules:
   - expected: CloudSign
     patterns: /(CLOUDSIGN|cloudsign)/
     prh: サービス名（英語表記）
-
+  - expected: クラウドサイン AI
+    patterns: /クラウドサイン ?ai/i
+    specs:
+      - from: クラウドサインAI
+        to: クラウドサイン AI
+      - from: クラウドサインai
+        to: クラウドサイン AI
+  - expected: クラウドサイン NOW
+    patterns: /クラウドサイン ?now/i
+    specs:
+      - from: クラウドサインNOW
+        to: クラウドサイン NOW
+      - from: クラウドサインnow
+        to: クラウドサイン NOW
+  - expected: クラウドサイン SCAN
+    patterns: /クラウドサイン ?scan/i
+    specs:
+      - from: クラウドサインSCAN
+        to: クラウドサイン SCAN
+      - from: クラウドサインscan
+        to: クラウドサイン SCAN
+  - expected: クラウドサイン Sales Automation
+    patterns: /クラウドサイン ?sales ?automation/i
+    specs:
+      - from: クラウドサインSales Automation
+        to: クラウドサイン Sales Automation
+      - from: クラウドサイン SalesAutomation
+        to: クラウドサイン Sales Automation
+      - from: クラウドサインSalesAutomation
+        to: クラウドサイン Sales Automation
+      - from: クラウドサイン SALES AUTOMATION
+        to: クラウドサイン Sales Automation
+      - from: クラウドサインSALES AUTOMATION
+        to: クラウドサイン Sales Automation
+  - expected: クラウドサイン ペイメント
+    patterns: /クラウドサイン ?(ペイメント|PAYMENT|Payment|payment)/i
+    specs:
+      - from: クラウドサインペイメント
+        to: クラウドサイン ペイメント
+      - from: クラウドサインPAYMENT
+        to: クラウドサイン ペイメント
+      - from: クラウドサイン PAYMENT
+        to: クラウドサイン ペイメント
+  - expected: クラウドサイン MAKE
+    patterns: /クラウドサイン ?(MAKE|Make|make)/i
+    specs:
+      - from: クラウドサインMAKE
+        to: クラウドサイン MAKE
+  - expected: クラウドサイン FILING
+    patterns: /クラウドサイン ?(FILING|Filing|filing)/i
+    specs:
+      - from: クラウドサインFILING
+        to: クラウドサイン FILING
+  - expected: クラウドサイン for Box
+    patterns: /クラウドサイン ?for ?box/i
+    specs:
+      - from: クラウドサインforBox
+        to: クラウドサイン for Box
+      - from: クラウドサインforBox
+        to: クラウドサイン for Box
+      - from: クラウドサイン forBox
+        to: クラウドサイン for Box
+      - from: クラウドサインfor Box
+        to: クラウドサイン for Box
+      - from: クラウドサイン for box
+        to: クラウドサイン for Box
+  - expected: クラウドサイン Salesforce版
+    patterns: /クラウドサイン ?Salesforce版/i
+    specs:
+      - from: クラウドサインSalesforce版
+        to: クラウドサイン Salesforce版
+      - from: クラウドサインsalesforce版
+        to: クラウドサイン Salesforce版
+      - from: クラウドサイン salesforce版
+        to: クラウドサイン Salesforce版
+  - expected: クラウドサイン CONNECT
+    patterns: /クラウドサイン ?(CONNECT|コネクト)/i
+    specs:
+      - from: クラウドサインCONNECT
+        to: クラウドサイン CONNECT
+      - from: クラウドサインコネクト
+        to: クラウドサイン CONNECT
+      - from: クラウドサイン コネクト
+        to: クラウドサイン CONNECT
+  - expected: サインのリ・デザイン
+    patterns: サインのリデザイン
   # 機能
   - expected: 一括見積り
     patterns: 一括見積もり
@@ -43,7 +128,43 @@ rules:
       - みん法
       - 皆の法律相談
     prh: 機能名
-
+  # プラン
+  - expected: $1ライトプラン
+    patterns: /(クラウドサイン.*)(Lightプラン)/
+    specs:
+      - from: クラウドサインの契約画面で、Lightプランをお選びください
+        to: クラウドサインの契約画面で、ライトプランをお選びください
+    prh: 末に「プラン」をつける場合はカタカナ表記にします（「プラン」をつけない場合は英語表記でも可）
+  - expected: ライトプラン$2
+    patterns: /(Lightプラン)(.*クラウドサイン)/
+    specs:
+      - from: まずはLightプランでクラウドサインをお試しください
+        to: まずはライトプランでクラウドサインをお試しください
+    prh: 末に「プラン」をつける場合はカタカナ表記にします（「プラン」をつけない場合は英語表記でも可）
+  - expected: $1コーポレートプラン
+    patterns: /(クラウドサイン.*)(Corporateプラン)/
+    specs:
+      - from: クラウドサインの契約画面で、Corporateプランをお選びください
+        to: クラウドサインの契約画面で、コーポレートプランをお選びください
+    prh: 末に「プラン」をつける場合はカタカナ表記にします（「プラン」をつけない場合は英語表記でも可）
+  - expected: コーポレートプラン$2
+    patterns: /(Corporateプラン)(.*クラウドサイン)/
+    specs:
+      - from: まずはCorporateプランでクラウドサインをお試しください
+        to: まずはコーポレートプランでクラウドサインをお試しください
+    prh: 末に「プラン」をつける場合はカタカナ表記にします（「プラン」をつけない場合は英語表記でも可）
+  - expected: $1エンタープライズプラン
+    patterns: /(クラウドサイン.*)(Enterpriseプラン)/
+    specs:
+      - from: クラウドサインの契約画面で、Enterpriseプランをお選びください
+        to: クラウドサインの契約画面で、エンタープライズプランをお選びください
+    prh: 末に「プラン」をつける場合はカタカナ表記にします（「プラン」をつけない場合は英語表記でも可）
+  - expected: エンタープライズプラン$2
+    patterns: /(Enterpriseプラン)(.*クラウドサイン)/
+    specs:
+      - from: まずはEnterpriseプランでクラウドサインをお試しください
+        to: まずはエンタープライズプランでクラウドサインをお試しください
+    prh: 末に「プラン」をつける場合はカタカナ表記にします（「プラン」をつけない場合は英語表記でも可）
   # 用語
   - expected: スマートフォン
     patterns:
