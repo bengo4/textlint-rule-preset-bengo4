@@ -52,7 +52,7 @@ rules:
         to: 受け取る
   - expected: お手数をおかけしますが
     patterns: お手数をお掛けしますが
-  - expected: お問い合わせ
+  - expected: 問い合わせ
     patterns:
       - 問合わせ
       - 問合せ
@@ -203,6 +203,14 @@ rules:
     patterns: 最早
   - expected: 申し込み
     patterns: 申込み
+  - expected: 申込書
+    patterns:
+      - 申し込み書
+      - 申込み書
+  - expected: 申込フォーム
+    patterns:
+      - 申し込みフォーム
+      - 申込みフォーム
   - expected: 申し訳ございません
     patterns: 申し訳ありません
   - expected: もはや
