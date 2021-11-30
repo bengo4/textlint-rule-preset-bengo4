@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/bengo4/textlint-rule-preset-bengo4/compare/v1.0.3...v1.0.4) (2021-11-30)
+
+
+### Bug Fixes
+
+* 用語を追加（クラウドサインのサービス名、プラン名ほか） ([#9](https://github.com/bengo4/textlint-rule-preset-bengo4/issues/9)) ([a816291](https://github.com/bengo4/textlint-rule-preset-bengo4/commit/a816291a6358d9c62d368f8020b02afafe05b031))
+
 ## [1.0.3](https://github.com/bengo4/textlint-rule-preset-bengo4/compare/v1.0.2...v1.0.3) (2021-08-20)
 
 
