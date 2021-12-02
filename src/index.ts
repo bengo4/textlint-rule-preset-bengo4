@@ -31,6 +31,8 @@ module.exports = {
   ),
 
   rulesConfig: Object.assign(
+    japanesePreset.rulesConfig,
+    jtfPreset.rulesConfig,
     {
       "@textlint-rule/no-unmatched-pair": true,
       "ja-hiragana-fukushi": true,
@@ -38,9 +40,8 @@ module.exports = {
       "ja-hiragana-keishikimeishi": true,
       "ja-no-redundant-expression": true,
       "no-mix-dearu-desumasu": true,
+      "3.1.1.全角文字と半角文字の間": false,
       prh: true,
     },
-    japanesePreset.rulesConfig,
-    jtfPreset.rulesConfig
   ),
 };
