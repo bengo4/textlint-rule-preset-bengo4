@@ -1,7 +1,7 @@
-## [1.0.5](https://github.com/bengo4/textlint-rule-preset-bengo4/compare/v1.0.4...v1.0.5) (2021-12-02)
+## [2.0.0](https://github.com/bengo4/textlint-rule-preset-bengo4/compare/v1.0.4...v2.0.0) (2021-12-02)
 
 
-### Bug Fixes
+### BREAKING CHANGE
 
 * 全角文字と半角文字の間にスペースを入れないルールを無効化 ([#10](https://github.com/bengo4/textlint-rule-preset-bengo4/issues/10)) ([aa7d926](https://github.com/bengo4/textlint-rule-preset-bengo4/commit/aa7d926d5574d3f47c6f4989a56ee28c8c062cf5))
 
