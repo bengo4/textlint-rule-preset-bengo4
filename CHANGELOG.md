@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/bengo4/textlint-rule-preset-bengo4/compare/v2.0.0...v2.0.1) (2022-03-11)
+
+
+### Bug Fixes
+
+* SMBCクラウドサインのルールを追加 ([#12](https://github.com/bengo4/textlint-rule-preset-bengo4/issues/12)) ([121d94e](https://github.com/bengo4/textlint-rule-preset-bengo4/commit/121d94e523e74f793ef8cf4d638fc3afc40e602e))
+
 ## [2.0.0](https://github.com/bengo4/textlint-rule-preset-bengo4/compare/v1.0.4...v2.0.0) (2021-12-02)
 
 
