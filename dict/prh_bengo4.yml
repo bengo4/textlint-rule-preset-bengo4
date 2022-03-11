@@ -114,6 +114,18 @@ rules:
         to: クラウドサイン CONNECT
       - from: クラウドサイン コネクト
         to: クラウドサイン CONNECT
+  - expected: SMBCクラウドサイン
+    patterns:
+      - /SMBC\s*(クラウドサイン|CloudSign)/i
+    specs:
+      - from: SMBCCloudSign
+        to: SMBCクラウドサイン
+      - from: SMBC クラウドサイン
+        to: SMBCクラウドサイン
+      - from: smbcクラウドサイン
+        to: SMBCクラウドサイン
+      - from: SMBC CloudSign
+        to: SMBCクラウドサイン
   - expected: サインのリ・デザイン
     patterns: サインのリデザイン
   # 機能
