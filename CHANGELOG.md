@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/bengo4/textlint-rule-preset-bengo4/compare/v2.0.1...v2.1.0) (2022-05-08)
+
+
+### Features
+
+* **deps:** bump textlint-rule-preset-japanese from 6.0.1 to 7.0.0 ([#17](https://github.com/bengo4/textlint-rule-preset-bengo4/issues/17)) ([ccb47bc](https://github.com/bengo4/textlint-rule-preset-bengo4/commit/ccb47bc58dcf185ad711812e7af3fa39343badd3))
+
 ## [2.0.1](https://github.com/bengo4/textlint-rule-preset-bengo4/compare/v2.0.0...v2.0.1) (2022-03-11)
 
 
