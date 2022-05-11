@@ -1,3 +1,10 @@
+## [2.1.1](https://github.com/bengo4/textlint-rule-preset-bengo4/compare/v2.1.0...v2.1.1) (2022-05-11)
+
+
+### Bug Fixes
+
+* **deps:** bump textlint-rule-ja-no-redundant-expression ([#18](https://github.com/bengo4/textlint-rule-preset-bengo4/issues/18)) ([b3623ee](https://github.com/bengo4/textlint-rule-preset-bengo4/commit/b3623ee882aa7205d08675cd8fca9069865bac61))
+
 # [2.1.0](https://github.com/bengo4/textlint-rule-preset-bengo4/compare/v2.0.1...v2.1.0) (2022-05-08)
 
 
