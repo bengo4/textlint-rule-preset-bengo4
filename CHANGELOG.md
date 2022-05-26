@@ -1,3 +1,10 @@
+# [2.2.0](https://github.com/bengo4/textlint-rule-preset-bengo4/compare/v2.1.1...v2.2.0) (2022-05-26)
+
+
+### Features
+
+* 業務支援事業のワードを追加、修正 ([#34](https://github.com/bengo4/textlint-rule-preset-bengo4/issues/34)) ([1871297](https://github.com/bengo4/textlint-rule-preset-bengo4/commit/18712976ad698218abd546ac724026643bf2d099))
+
 ## [2.1.1](https://github.com/bengo4/textlint-rule-preset-bengo4/compare/v2.1.0...v2.1.1) (2022-05-11)
 
 

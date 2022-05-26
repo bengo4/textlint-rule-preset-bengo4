@@ -1,6 +1,6 @@
 {
   "name": "textlint-rule-preset-bengo4",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "description": "弁護士ドットコムで使われているtextlintプリセット",
   "main": "lib/index.js",
   "author": "Bengo4.com, Inc.",
