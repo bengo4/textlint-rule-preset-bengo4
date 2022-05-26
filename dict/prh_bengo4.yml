@@ -7,17 +7,43 @@ rules:
     patterns: 弁コム
     prh: サービス名の場合は略さず表記します
   - expected: 弁護士ドットコムLIBRARY
-    patterns: /弁護士ドットコム\s?(L|l)ibrary/
+    patterns: /弁護士ドットコム\s?(Library|library|LIBRARY)/
     prh: サービス名（英語表記）
+    specs:
+      - from: 弁護士ドットコムLibrary
+        to: 弁護士ドットコムLIBRARY
+      - from: 弁護士ドットコム library
+        to: 弁護士ドットコムLIBRARY
   - expected: 弁護士ドットコムライブラリー
     patterns: /弁護士ドットコムライブラリ([^ー])/
     prh: カタカナ表記時は長音（ー）あり
-  - expected: 業務支援システム
-    patterns: 業シス
-    prh: サービス名の場合は略さず表記します
+  - expected: 弁護士ドットコムライブラリー
+    patterns: /弁護士ドットコム\s?(ライブラリー|ライブラリ)/
+    prh: サービス名の場合はスペースを空けずに表記します
+    specs:
+      - from: 弁護士ドットコム ライブラリー
+        to: 弁護士ドットコムライブラリー
   - expected: GYOSYS
     patterns: gyosys
     prh: サービス名（英語表記）
+  - expected: 弁護士ドットコム案件管理システム
+    patterns: /弁護士ドットコム\s?案件管理システム/
+    prh: サービス名の場合はスペースを空けずに表記します
+    specs:
+      - from: 弁護士ドットコム 案件管理システム
+        to: 弁護士ドットコム案件管理システム
+  - expected: 弁護士ドットコムオンラインセミナー
+    patterns: /弁護士ドットコム\s?オンラインセミナー/
+    prh: サービス名の場合はスペースを空けずに表記します
+    specs:
+      - from: 弁護士ドットコム オンラインセミナー
+        to: 弁護士ドットコムオンラインセミナー
+  - expected: 弁護士向け電話代行サービス
+    patterns: /弁護士向け\s?電話代行サービス/
+    prh: サービス名の場合はスペースを空けずに表記します
+    specs:
+      - from: 弁護士向け 電話代行サービス
+        to: 弁護士向け電話代行サービス
   - expected: 税理士ドットコム
     patterns: 税コム
     prh: サービス名の場合は略さず表記します
