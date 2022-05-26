@@ -7,7 +7,7 @@ rules:
     patterns: 弁コム
     prh: サービス名の場合は略さず表記します
   - expected: 弁護士ドットコムLIBRARY
-    patterns: /(弁護士ドットコム\s?(L|l)ibrary|弁護士ドットコム\s?LIBRARY)/
+    patterns: /弁護士ドットコム\s?(Library|library|LIBRARY)/
     prh: サービス名（英語表記）
     specs:
       - from: 弁護士ドットコムLibrary
