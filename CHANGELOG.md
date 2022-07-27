@@ -1,3 +1,10 @@
+## [2.2.1](https://github.com/bengo4/textlint-rule-preset-bengo4/compare/v2.2.0...v2.2.1) (2022-07-27)
+
+
+### Bug Fixes
+
+* **deps:** bump textlint-rule-preset-jtf-style from 2.3.12 to 2.3.13 ([#61](https://github.com/bengo4/textlint-rule-preset-bengo4/issues/61)) ([09f6f80](https://github.com/bengo4/textlint-rule-preset-bengo4/commit/09f6f80c591861f5a6f13f3a3595f171f361abcf))
+
 # [2.2.0](https://github.com/bengo4/textlint-rule-preset-bengo4/compare/v2.1.1...v2.2.0) (2022-05-26)
 
 
