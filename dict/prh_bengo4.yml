@@ -54,7 +54,7 @@ rules:
     patterns: /BL(で|に|を|は|が|の|と|も)/
     prh: サービス名の場合は略さず表記します
   - expected: CloudSign
-    patterns: /(CLOUDSIGN|cloudsign)/
+    patterns: /(CLOUDSIGN|cloudsign|Cloudsign)/
     prh: サービス名（英語表記）
   - expected: クラウドサイン AI
     patterns: /クラウドサイン ?ai/i
