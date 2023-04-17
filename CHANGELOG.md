@@ -1,3 +1,10 @@
+## [2.2.2](https://github.com/bengo4/textlint-rule-preset-bengo4/compare/v2.2.1...v2.2.2) (2023-04-17)
+
+
+### Bug Fixes
+
+* CloudSignのpatternsを追加 ([9d0fcff](https://github.com/bengo4/textlint-rule-preset-bengo4/commit/9d0fcff3eb3a8db4667064048058cd1cb47d3027))
+
 ## [2.2.1](https://github.com/bengo4/textlint-rule-preset-bengo4/compare/v2.2.0...v2.2.1) (2022-07-27)
 
 
