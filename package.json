@@ -42,7 +42,7 @@
     "@textlint/types": "^12.0.0",
     "@types/node": "^18.0.3",
     "husky": "^8.0.1",
-    "prettier": "^2.3.2",
+    "prettier": "^3.0.0",
     "semantic-release": "^19.0.2",
     "textlint-scripts": "^12.0.1",
     "textlint-tester": "^13.3.2",
